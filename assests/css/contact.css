@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('assets/image/Suooort.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.main-header {
+  width: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-buttons button {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-buttons button:hover {
+  background: #007BFF;
+  color: #fff;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin-right: auto;
+  background: #e87f7f;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contact-detail {
+  width: 50%;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.07);
+  margin-top: 0;
+}
+
+.contact-detail h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #007BFF;
+}
+
+.contact-detail p {
+  font-size: 1.2rem;
+  margin:
