@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+.form-control {
+  border-radius: 12px;
+}
