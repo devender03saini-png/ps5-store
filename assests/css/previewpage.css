@@ -1,5 +1,8 @@
 /* Remove unused components and keep only relevant styles for product cards and layout */
 
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
 .top-right-btn {
   position: absolute;
   top: 20px;
@@ -19,11 +23,12 @@ body {
   border: none;
   border-radius: 12px;
   font-size: 0.95rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   z-index: 1000;
   transition: background 0.2s;
 }
+
 .top-right-btn:hover {
   background: #0056b3;
 }
@@ -146,15 +151,18 @@ body {
     padding: 20px;
     width: 100%;
   }
+
   .content-right {
     padding: 20px;
     width: 100%;
   }
+
   .product {
     min-width: 180px;
     max-width: 180px;
     height: 280px;
   }
+
   .content-left h1 {
     font-size: 1.5rem;
   }
