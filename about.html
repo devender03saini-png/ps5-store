@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | LOREM5 Controllers</title>
+  <link rel="icon" type="images/png" href="assests/images/logoTItle.png" />
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="controller2.css" />
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(45deg, black, #bab9b9, #fffdfc, whitesmoke);
+      background-size: 300% 300%;
+      animation: color 12s ease-in-out infinite;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .content {
+      flex: 1 0 auto;
+      min-height: 80vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+
+    .about-left {
+      flex: 1 1 300px;
+      padding: 2rem;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .about-left h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 1rem;
+    }
+
+    .about-left p {
+      font-size: 1.1rem;
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-right {
+      flex: 2 1 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .about-img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 5px 20px rgba(17, 0, 17, 0.15);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-right h2 {
+      font-size: 1.5rem;
+      color: #470f4a;
+      margin-bottom: 1rem;
+    }
+
+    .about-right ul {
+      font-size: 1.1rem;
+      color: #000;
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      flex-shrink: 0;
+      background: #000000;
+      color: #16a085;
+      border-radius: 20px 20px 0px 0px;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .btn-group .btn {
+      margin: 0 0.5rem;
+      border-radius: 50px;
+      font-weight: 550;
+      background: #fffbfb;
+      color: #000;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    .btn-group .btn:hover {
+      background: #80a8f9;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+      }
+      .about-right, .about-left {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-left h1 {
+        font-size: 1.5rem;
+      }
+      .about-img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid content">
+
+    <div class="about-left">
+      <h1>About LOREM5 Controllers</h1>
+      <p>
+        At LOREM5 Controllers, we believe gaming is more than just a hobby—it's a lifestyle. Since our founding in 2024, we've been dedicated to delivering the most stylish, high-quality, and customizable PS5 controllers and accessories for gamers everywhere.
+      </p>
+      <p>
+        Our mission is to empower players to express themselves through their gear, offering unique skins, pro-level hardware, and unbeatable customer support.
+      </p>
+    </div>
+
+    <div class="about-right">
+      <img src="assests\images\logoBlack.png" alt="About Us" class="about-img">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Premium, hand-checked controller skins and accessories</li>
+        <li>Exclusive limited editions and collaborations</li>
+        <li>Fast shipping and secure checkout</li>
+        <li>Friendly, responsive support team</li>
+        <li>Passion for gaming and innovation</li>
+        <li>Devender Ki maaa ka bhaosra</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="btn-group" role="group">
+      <a href="index.html" class="btn">Home</a>
+      <a href="contact.html" class="btn">Contact</a>
+      <a href="#" class="btn active">About</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
