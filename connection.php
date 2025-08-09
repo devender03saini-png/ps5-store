@@ -1,8 +1,8 @@
 <?php
-$host = "sql108.infinityfree.com"; // Your InfinityFree hostname
-$username = "if0_39649374";   // Your MySQL username
-$password = "";  // Your MySQL password
-$dbname = "if0_39649374_ps5_db";  // Your database name
+$host = "sql108.infinityfree.com";
+$username = "if0_39649374";
+$password = "I5piWPNlUSgTjNF";
+$dbname = "if0_39649374_ps5_db";
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
