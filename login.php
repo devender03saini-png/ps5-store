@@ -18,12 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             header("Location: home.html");
             exit;
         } else {
-            //  Wrong password → go back to login page
+            //  Wrong password => go back to login page
             header("Location: login.html?error=wrongpassword");
             exit;
         }
     } else {
-        //No user found → go back to login page
+        //No user found => go back to login page
         header("Location: login.html?error=nouser");
         exit;
     }
