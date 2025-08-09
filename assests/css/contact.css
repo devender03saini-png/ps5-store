@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('assets/image/Suooort.jpg');
+   /*background-image: url('../image/Suooort.jpg'); */
   background-size: cover;
   background-position: center;
   padding: 40px;
@@ -108,4 +108,4 @@ button:hover {
 
 .contact-detail p {
   font-size: 1.2rem;
-  margin:
+}
