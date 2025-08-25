@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($user = mysqli_fetch_assoc($result)) {
         if (password_verify($password, $user["password"])) {
             $_SESSION['user'] = $user["name"];
-            header("Location: home.html");
+            header("Location: home.php");
             exit;
         } else {
             //  Wrong password => go back to login page

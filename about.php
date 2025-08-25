@@ -27,9 +27,17 @@
         }
 
         @keyframes color {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .content {
@@ -102,7 +110,9 @@
             .content {
                 flex-direction: column;
             }
-            .about-right, .about-left {
+
+            .about-right,
+            .about-left {
                 padding: 1rem;
             }
         }
@@ -111,6 +121,7 @@
             .about-left h1 {
                 font-size: 1.5rem;
             }
+
             .about-img {
                 width: 100%;
             }
@@ -120,60 +131,19 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">
-                <img src="assests/images/logoTItle.png" width="70" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TRENDING</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">MOST POPULAR</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAVORITES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TAGS</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CATEGORIES</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">DUAL SENSE</a></li>
-                            <li><a class="dropdown-item" href="#">Marvel</a></li>
-                            <li><a class="dropdown-item" href="home-page-football.html">Football</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-                </ul>
-                <div class="d-flex align-items-center ms-auto me-3">
-                    <button class="btn btn-outline-light" type="button" id="searchToggle">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-                <div class="d-none w-100 mt-2 mt-sm-0" id="searchForm">
-                    <form class="d-flex w-100" action="https://www.google.com/search" method="GET" target="_blank">
-                        <input class="form-control me-2" type="text" name="q" placeholder="Search on Google...">
-                        <button class="btn btn-outline-light" type="submit">Go</button>
-                    </form>
-                </div>
-                <div class="ms-2">
-                    <a href="login.html" class="btn btn-outline-light px-3 py-1 d-flex align-items-center gap-2">
-                        <i class="fa fa-user"></i> Login
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php include("navbar.php"); ?>
 
     <div class="content">
         <div class="about-left">
             <h1>About LOREM5 Controllers</h1>
             <p>
-                At LOREM5 Controllers, we believe gaming is more than just a hobby—it's a lifestyle. Since our founding in 2024, we've been dedicated to delivering the most stylish, high-quality, and customizable PS5 controllers and accessories for gamers everywhere.
+                At LOREM5 Controllers, we believe gaming is more than just a hobby—it's a lifestyle. Since our founding
+                in 2024, we've been dedicated to delivering the most stylish, high-quality, and customizable PS5
+                controllers and accessories for gamers everywhere.
             </p>
             <p>
-                Our mission is to empower players to express themselves through their gear, offering unique skins, pro-level hardware, and unbeatable customer support.
+                Our mission is to empower players to express themselves through their gear, offering unique skins,
+                pro-level hardware, and unbeatable customer support.
             </p>
         </div>
 
@@ -196,7 +166,8 @@
             <div class="row text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">PS5 Store</h5>
-                    <p>Your ultimate destination for custom PS5 controllers, trending accessories, and limited edition designs.</p>
+                    <p>Your ultimate destination for custom PS5 controllers, trending accessories, and limited edition
+                        designs.</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">Products</h5>
@@ -207,7 +178,7 @@
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">Useful Links</h5>
-                    <p><a href="home.html" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="home.php" class="text-white text-decoration-none">Home</a></p>
                     <p><a href="login.html" class="text-white text-decoration-none">Login</a></p>
                     <p><a href="#" class="text-white text-decoration-none">Trending</a></p>
                     <p><a href="#" class="text-white text-decoration-none">Support</a></p>
@@ -243,4 +214,5 @@
         });
     </script>
 </body>
+
 </html>

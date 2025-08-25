@@ -26,7 +26,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .contact-form-wrapper {
             display: flex;
             justify-content: center;
@@ -36,8 +36,9 @@
             margin: 2rem auto;
             max-width: 1200px;
         }
-        
-        .contact-form, .contact-detail {
+
+        .contact-form,
+        .contact-detail {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 2rem;
             border-radius: 10px;
@@ -45,13 +46,14 @@
             flex: 1;
             min-width: 300px;
         }
-        
-        .contact-form h2, .contact-detail h2 {
+
+        .contact-form h2,
+        .contact-detail h2 {
             margin-bottom: 1.5rem;
             color: #333;
             text-align: center;
         }
-        
+
         .contact-form input,
         .contact-form textarea,
         .contact-form select {
@@ -62,12 +64,12 @@
             border-radius: 5px;
             font-size: 1rem;
         }
-        
+
         .contact-form textarea {
             resize: vertical;
             min-height: 150px;
         }
-        
+
         .contact-form button {
             width: 100%;
             padding: 0.75rem;
@@ -79,17 +81,17 @@
             font-size: 1rem;
             transition: background-color 0.3s;
         }
-        
+
         .contact-form button:hover {
             background-color: #0056b3;
         }
-        
+
         .contact-detail p {
             margin-bottom: 1rem;
             font-size: 1rem;
             color: #555;
         }
-        
+
         /* Adjust footer to stay at bottom */
         .content-wrap {
             flex: 1;
@@ -99,51 +101,7 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">
-                <img src="assests/images/logoTItle.png" width="70" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TRENDING</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">MOST POPULAR</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAVORITES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TAGS</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CATEGORIES</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">DUAL SENSE</a></li>
-                            <li><a class="dropdown-item" href="#">Marvel</a></li>
-                            <li><a class="dropdown-item" href="home-page-football.html">Football</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-                </ul>
-                <div class="d-flex align-items-center ms-auto me-3">
-                    <button class="btn btn-outline-light" type="button" id="searchToggle">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-                <div class="d-none w-100 mt-2 mt-sm-0" id="searchForm">
-                    <form class="d-flex w-100" action="https://www.google.com/search" method="GET" target="_blank">
-                        <input class="form-control me-2" type="text" name="q" placeholder="Search on Google...">
-                        <button class="btn btn-outline-light" type="submit">Go</button>
-                    </form>
-                </div>
-                <div class="ms-2">
-                    <a href="login.html" class="btn btn-outline-light px-3 py-1 d-flex align-items-center gap-2">
-                        <i class="fa fa-user"></i> Login
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php include("navbar.php"); ?>
 
     <div class="content-wrap">
         <div class="contact-form-wrapper">
@@ -180,7 +138,8 @@
             <div class="row text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">PS5 Store</h5>
-                    <p>Your ultimate destination for custom PS5 controllers, trending accessories, and limited edition designs.</p>
+                    <p>Your ultimate destination for custom PS5 controllers, trending accessories, and limited edition
+                        designs.</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">Products</h5>
@@ -191,7 +150,7 @@
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">Useful Links</h5>
-                    <p><a href="home.html" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="home.php" class="text-white text-decoration-none">Home</a></p>
                     <p><a href="login.html" class="text-white text-decoration-none">Login</a></p>
                     <p><a href="#" class="text-white text-decoration-none">Trending</a></p>
                     <p><a href="#" class="text-white text-decoration-none">Support</a></p>
@@ -227,4 +186,5 @@
         });
     </script>
 </body>
+
 </html>

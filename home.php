@@ -21,18 +21,18 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        
+
         .carousel-inner {
             border-radius: 15px;
             overflow: hidden;
         }
-        
+
         .carousel-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         /* Card Styles */
         .card-img-top {
             height: 200px;
@@ -63,18 +63,18 @@
         .section-spacing {
             margin: 5rem 0;
         }
-        
+
         body {
             padding-top: 70px;
             background-color: #f8f9fa;
         }
-        
+
         .section-title {
             position: relative;
             margin-bottom: 2.5rem;
             text-align: center;
         }
-        
+
         .section-title:after {
             content: "";
             display: block;
@@ -83,7 +83,7 @@
             background: #007bff;
             margin: 15px auto;
         }
-        
+
         .price {
             color: #dc3545;
             font-weight: bold;
@@ -93,57 +93,18 @@
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">
-                <img src="assests/images/logoTItle.png" width="70" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TRENDING</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CATEGORIES</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#football">Football</a></li>
-                            <li><a class="dropdown-item" href="#anime">Anime</a></li>
-                            <li><a class="dropdown-item" href="#exclusive">PS Exclusive</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-                </ul>
-                <div class="d-flex align-items-center ms-auto me-3">
-                    <button class="btn btn-outline-light" type="button" id="searchToggle">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-                <div class="d-none w-100 mt-2 mt-sm-0" id="searchForm">
-                    <form class="d-flex w-100" action="https://www.google.com/search" method="GET" target="_blank">
-                        <input class="form-control me-2" type="text" name="q" placeholder="Search on Google...">
-                        <button class="btn btn-outline-light" type="submit">Go</button>
-                    </form>
-                </div>
-                <div class="ms-2">
-                    <a href="login.html" class="btn btn-outline-light px-3 py-1 d-flex align-items-center gap-2">
-                        <i class="fa fa-user"></i> Login
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+
+    <?php include("navbar.php"); ?>
+
 
     <!-- Football Section -->
     <section id="football" class="section-spacing">
         <div class="container">
             <h2 class="section-title">Football Controllers</h2>
-            
+
             <!-- Football Carousel -->
-            <div id="footballCarousel" class="carousel slide carousel-container mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="footballCarousel" class="carousel slide carousel-container mb-5" data-bs-ride="carousel"
+                data-bs-interval="3000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assests\images\fb 1.jpeg" alt="Football Controller 1">
@@ -155,14 +116,16 @@
                         <img src="assests\images\fb 3.jpeg" alt="Football Controller 3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#footballCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#footballCarousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#footballCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#footballCarousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-            
+
             <!-- Football Products -->
             <div class="row">
                 <div class="col-md-4">
@@ -172,7 +135,7 @@
                             <h5 class="card-title">Real Madrid Edition</h5>
                             <p class="card-text">Premium PS5 controller with official Real Madrid branding</p>
                             <p class="price">₹10,499</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -183,18 +146,19 @@
                             <h5 class="card-title">FC Barcelona Edition</h5>
                             <p class="card-text">Custom PS5 controller with Blaugrana colors</p>
                             <p class="price">₹9,999</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assests\images\Bayern Munich-Photoroom.png" class="card-img-top" alt="Bayern Munich Controller">
+                        <img src="assests\images\Bayern Munich-Photoroom.png" class="card-img-top"
+                            alt="Bayern Munich Controller">
                         <div class="card-body">
                             <h5 class="card-title">Bayern Munich Edition</h5>
                             <p class="card-text">Limited edition controller with Bavarian design</p>
                             <p class="price">₹11,299</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -206,9 +170,10 @@
     <section id="anime" class="section-spacing bg-light py-5">
         <div class="container">
             <h2 class="section-title">Anime Controllers</h2>
-            
+
             <!-- Anime Carousel -->
-            <div id="animeCarousel" class="carousel slide carousel-container mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="animeCarousel" class="carousel slide carousel-container mb-5" data-bs-ride="carousel"
+                data-bs-interval="3000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assests\images\b one piece.jpeg" alt="Anime Controller 1">
@@ -220,14 +185,16 @@
                         <img src="assests\images\b deamon lsayer.jpeg" alt="Anime Controller 3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-            
+
             <!-- Anime Products -->
             <div class="row">
                 <div class="col-md-4">
@@ -237,7 +204,7 @@
                             <h5 class="card-title">Gundam</h5>
                             <p class="card-text">Gundam , strong & elegant themed PS5 controller</p>
                             <p class="price">₹8,999</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +215,7 @@
                             <h5 class="card-title">Bleach Edition</h5>
                             <p class="card-text">Bleach inspire dark and white ,with a skull</p>
                             <p class="price">₹9,499</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -259,7 +226,7 @@
                             <h5 class="card-title">Pikachu Edition</h5>
                             <p class="card-text">Pikachu yellow with minimal pikachu image</p>
                             <p class="price">₹9,799</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -271,9 +238,10 @@
     <section id="exclusive" class="section-spacing">
         <div class="container">
             <h2 class="section-title">PS Exclusive Controllers</h2>
-            
+
             <!-- PS Exclusive Carousel -->
-            <div id="psexCarousel" class="carousel slide carousel-container mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="psexCarousel" class="carousel slide carousel-container mb-5" data-bs-ride="carousel"
+                data-bs-interval="3000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assests\images\bp1.jpeg" alt="PS Exclusive 1">
@@ -292,43 +260,45 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-            
+
             <!-- PS Exclusive Products -->
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assests\images\spider man classy.png" class="card-img-top" alt="Spider-Man Controller">
+                        <img src="assests\images\spider man classy.png" class="card-img-top"
+                            alt="Spider-Man Controller">
                         <div class="card-body">
                             <h5 class="card-title">Spider-Man 2 Edition</h5>
                             <p class="card-text">Official Marvel's Spider-Man 2 limited edition</p>
                             <p class="price">₹12,999</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assests\images\god of war translucent.png" class="card-img-top" alt="God of War Controller">
+                        <img src="assests\images\god of war translucent.png" class="card-img-top"
+                            alt="God of War Controller">
                         <div class="card-body">
                             <h5 class="card-title">God of War Ragnarök</h5>
                             <p class="card-text">Kratos and Atreus themed special edition</p>
                             <p class="price">₹13,499</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
-                   <div class="col-md-4">
+                <div class="col-md-4">
                     <div class="card">
                         <img src="assests\images\cyberpunk 2077.png" class="card-img-top" alt="God of War Controller">
                         <div class="card-body">
                             <h5 class="card-title">Cyber Punk 2077</h5>
                             <p class="card-text">Cyber Punk themed special edition</p>
                             <p class="price">₹13,499</p>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="buy.html" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- Footer Section -->
@@ -337,7 +307,8 @@
             <div class="row text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">PS5 Store</h5>
-                    <p>Your ultimate destination for custom PS5 controllers, trending accessories, and limited edition designs.</p>
+                    <p>Your ultimate destination for custom PS5 controllers, trending accessories, and limited edition
+                        designs.</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">Products</h5>
@@ -348,9 +319,9 @@
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">Useful Links</h5>
-                    <p><a href="home.html" class="text-white text-decoration-none">Home</a></p>
-                    <p><a href="about.html" class="text-white text-decoration-none">About Us</a></p>
-                    <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+                    <p><a href="home.php" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="about.php" class="text-white text-decoration-none">About Us</a></p>
+                    <p><a href="contact.php" class="text-white text-decoration-none">Contact</a></p>
                     <p><a href="#" class="text-white text-decoration-none">Support</a></p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -375,7 +346,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const toggleBtn = document.getElementById("searchToggle");
@@ -387,4 +358,5 @@
         });
     </script>
 </body>
+
 </html>
